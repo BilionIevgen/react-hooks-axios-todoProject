@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
+
+.todo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 750px;
+  height: 530px;
+  border: 3px solid #f4f6f8;
+  box-shadow: 1px 2px 20px #f3f3f3;
+  display: flex;
+  align-items: stretch;
+
+  &__sidebar {
+    background-color: #f4f6f8;
+    width: 250px;
+    height: 100%;
+    padding: 50px 20px;
+  }
+}
+
+.field {
+  background-color: #fff;
+  border: 1px solid #efefef;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
