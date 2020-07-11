@@ -1,14 +1,13 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import './Badge.scss';
 
-export default function Badge({ color, onClick, active, id }) {
-  return (
-    <i
-      onClick={() => {
-        if (onClick) {
-          onClick(id);
-        }
-      }}
-      className={`badge badge--${color} ${active && 'active'}`}></i>
-  );
-}
+const Badge = ({ color, onClick, className }) => (
+  <i
+    onClick={onClick}
+    className={classNames('badge', { [`badge--${color}`]: color }, className)}
+  ></i>
+);
+
+export default Badge;

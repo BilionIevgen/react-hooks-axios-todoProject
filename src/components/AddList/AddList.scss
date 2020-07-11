@@ -1,50 +1,43 @@
 .add-list {
-  position: relative;
   &__popup {
-    width: 235px;
     height: 150px;
-    background-color: #ffffff;
-    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.05);
+    width: 240px;
+    background: #ffffff;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    position: absolute;
     padding: 18px;
-  }
-  .field {
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  button {
-    background-color: #4dd599;
-    border: none;
-    padding: 10px 20px;
-    color: #ffffff;
-    border-radius: 4px;
-    width: 100%;
-  }
-  button:hover {
-    background-color: hsl(154, 85%, 64%);
-    cursor: pointer;
-  }
-  ul {
-    display: flex;
-    justify-content: space-between;
-    li {
-      i {
-        border: 1px solid #fff;
-        height: 20px;
-        width: 20px;
-        &.active {
-          border: 1px solid #525252;
-        }
-      }
+    box-sizing: border-box;
+    position: relative;
+    top: -25px;
+    left: 10px;
+
+    .button {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    &-close-btn {
+      position: absolute;
+      right: -8px;
+      top: -8px;
       cursor: pointer;
     }
-    margin-bottom: 10px;
-  }
-  .close {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    cursor: pointer;
+
+    &-colors {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+
+      .badge {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        border: 2px solid transparent;
+
+        &.active {
+          border: 2px solid #525252;
+        }
+      }
+    }
   }
 }
